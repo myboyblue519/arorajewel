@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Lato:wght@300;400&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/0d87972814.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/0499a3b8f3.js" crossorigin="anonymous"></script>
 <script src="script.js" type="text/javascript"></script>
     <title>&#128142;Arora Jewelers&#128142;</title>
   </head>
   <body>
     <header>
-    <div class="mobile"><a href="#" onclick="toggleNav();">&#9776;</a></div>
+    <!-- <div class="mobile"><a href="#" onclick="toggleNav();">&#9776;</a></div> -->
     <!-- class="small"   -->
    
     <nav>
@@ -40,17 +40,25 @@
         <h3>Jewelers</h3>
       </div>
       
-      <div class="small">
-        <button>I</button>
-        <button>F</button>
-        <button>S</button>
-        <button>T</button>
-      </div>
+      <div class="social">
+      <a href="#">
+        <i class="fa-brands fa-instagram fa-lg"></i>
+      </a>       
+      <a href="#">
+        <i class="fa-brands fa-facebook-f fa-lg"></i>
+      </a>       
+      <a href="#">
+        <i class="fa-brands fa-snapchat fa-lg"></i>
+      </a>       
+      <a href="#">
+        <i class="fa-brands fa-twitter fa-lg"></i>
+      </a>      
+    </div>
     </header>
 
     <main>
       <section class="wrapper hand">
-        <div>
+        <div class="handImg">
           <img
             src="assets/image-6@2x.png"
             alt="Jewelery Being Made by Hand"
@@ -60,17 +68,15 @@
         <div  class="handSub">
           <h2>Hand Crafted</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam veniam
-            ipsam cumque expedita consequuntur ab enim tempore quas earum illum,
-            eligendi sit a aut repellendus. Nostrum nobis sequi possimus ipsum!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe vel voluptatum atque eius sunt, neque repellat suscipit velit quos odit, architecto, totam nisi assumenda. Amet iste reprehenderit nobis, odit sequi quasi libero omnis. Veniam impedit error, quibusdam omnis totam optio sint obcaecati libero corrupti ea rerum consequatur voluptas dicta unde tempore explicabo ut perspiciatis quo. Culpa, ullam maxime quod in cumque quas, voluptatem excepturi enim quos consequuntur unde reprehenderit odio quis qui ipsa nisi esse cum sed libero sint sequi ea dolorum distinctio. Aut, nulla.
           </p>
           <button>Read More</button>
         </div>
       </section>
 
-      <section class="wrapper latest">
+      <section class="latest">
         <h2>Latest Collection</h2>
-        <div class="cards">
+        <div class="cards wrapper">
           <img
             src="assets/image-2_2@2x.png"
             alt="An assortment of gold and silver necklaces"
@@ -79,11 +85,11 @@
             src="assets/image-4@2x.png"
             alt="A Pair of intertwined gold wedding bands"
           />
-          <img class="small" src="assets/image-3.jpg" alt=";Gold Earings" />
+          <img src="assets/image-3.jpg" alt=";Gold Earings" />
         </div>
       </section>
 
-      <section class="wrapper">
+      <section class="links wrapper">
         <div class="icons">
             <ul>
                 <li><i class="fa-regular fa-images fa-xl"></i></li> 
@@ -103,15 +109,9 @@
         </div>
       </section>
 
-      <section class="wrapper materials">
-        <div>
-          <img
-            src="assets/image-2@2x.png"
-            alt="Woman wearing two necklaces with charms"
-          />
-        </div>
-
-        <div  class="materialsSub">
+      <section class="materials">
+        
+        <div  class="materialsSub wrapper">
           <h2>Sustainable Materials</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
@@ -121,22 +121,25 @@
           </p>
           <button>Read More</button>
         </div>
+        <div class="sustainImg">
+          <img
+            src="assets/image-2@2x.png"
+            alt="Woman wearing two necklaces with charms"
+          />
+        </div>
     </section>
-    <section class="wrapper match">
-        <div class="matchSub">
-          <h2>Mix & Match</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            quasi beatae at delectus voluptas voluptates aperiam adipisci?
-            Consequatur quibusdam laudantium ipsa. Cumque temporibus minima
-            iusto facilis voluptatum veniam dolorem inventore!
-          </p>
-          <button>Read More</button>
-        </div>
-
-        <div>
-            <img src="assets/image-2-copy@2x.png" alt="" />
-        </div>
+    <section class="match">
+      <div class="matchImg">
+        <img src="assets/image-2-copy@2x.png" alt="" />
+      </div>
+      <div class="matchSub wrapper">
+        <h2>Mix & Match</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui tempora possimus modi deleniti expedita ab esse doloremque a harum cumque doloribus eaque eos est at, dolorem natus vitae quae, cupiditate numquam repellat id aspernatur voluptatum illo. Culpa dolorum dolorem quae?
+        </p>
+        <button>Read More</button>
+      </div>
+        
     </section>
 
     <section class="wrapper closing">  
@@ -149,15 +152,17 @@
           </ul>
         </div>
         <div class="closing2">
-          <h2>Stay Updated</h2>
-          <form action="">
-            <legend>Subscribe to our newsletter to stay updated</legend>
-            <input type="email" placeholder="email address" />
-            <button>subscribe</button>
+          <h5>Stay Updated</h5>
+          <h6>Subscribe to our newsletter to stay updated</h6>
+          <form action="#">
+            <!-- <div class="inputBtn"> -->
+              <input type="email" placeholder="email address" />
+              <button class="suscribeBtn">subscribe</button>
+            <!-- </div> -->
           </form>
         </div>
         <div class="address closing3">
-          <h2>Contact</h2>
+          <h5>Contact</h5>
           <p>info@email.com | 123-456-7890</p>
           <p>123 some road, Toronto, ON</p>
           <p>A5A 5A5, Canada</p>
