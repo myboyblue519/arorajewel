@@ -316,3 +316,96 @@ form {
 	flex-direction: row;
     width: 140%;
 }
+
+@media  (max-width:500px){
+    nav{
+        display: none;
+    }
+    .logo {
+        padding: 13rem .75rem .25rem;
+        margin: 0;
+    }
+    header{
+        background-image: url(assets/header-1.jpg);
+    }
+    h1{
+        font-size: 3.85rem;
+    }
+    span {
+        margin-left: 6rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+        margin-left: 6.5rem;
+        margin-top: -0.5rem;
+    }
+    .social{
+        display: none;
+    }
+    .wrapper {
+        max-width: 1500px;
+        margin: 3rem 0;
+    }
+    
+    .hand {
+        height: 130vh;
+        align-items: center;
+        flex-direction: column;
+            }
+    .handImg {
+        width: 95%;
+    }
+    h2 {
+        font-size: 1.9rem;
+        margin: 1rem auto;
+    }
+    button {
+        margin: 3rem auto 0;
+    }
+    .earings {
+        display: none;
+    }
+    .cards img {
+        width: 40%;
+        margin: 1rem 0.25rem;
+    }
+    .latest {
+        height: 50vh;
+        border: 2px solid white;
+        border-top: none;
+    }
+    .latest h2 {
+        padding: 0;
+        text-align: center;
+        padding-top: 4rem;
+    }
+    .icons {         
+        height: 40vh;
+        flex-direction: column;
+    }
+    .materials {
+        flex-direction: column-reverse;
+    }
+    .match {
+        flex-direction: column;
+    }
+    .sustainImg, .matchImg {
+        width: 100%;
+    }
+    .closing {
+        flex-direction: column;
+    }
+    .closing1 ul {
+        flex-direction: row;
+    }
+    form {
+        flex-direction: column;
+        width: 80%;
+    }
+    .closing3 {
+        align-items: center;
+    }
+    placeholder {
+        text-align: center;
+    }
+}
